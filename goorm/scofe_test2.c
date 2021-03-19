@@ -22,26 +22,37 @@ int exchange(int drink, long coupons, long season){
 int main() {
     unsigned int t;
     scanf("%d", &t);
-    
-    unsigned int n[t], m[t];
+
+    unsigned long n[t], m[t];
+    long long int nCoupons;
+    int nDrink = 0;
+
     for(int i=0; i<t; i++){
-        scanf("%d %d", &n[i], &m[i]);
+            scanf("%ld %ld", &n[i], &m[i]);
     }
-    int nDrink;
-    unsigned int nCoupons;
-    for(int i=0; i<t; i++){
-        nDrink = 0;
-        nCoupons = n[i] + m[i];
-        //printf("%d: nCoupons: %d\n", i+1, nCoupons);
-        while(nCoupons >= 12 && n[i] >= 5){
+    
+    nCoupons = n[0] + m[0];
+    //nDrink = nCoupons/12 - m[i]/7;
+    int i=0;
+    while( 1 ){
+        if( i >= t ) break;
+        //scanf("%ld %ld", &n[i], &m[i]);
+        if( nCoupons >= 12 && n[i] >= 5){
             nDrink++;
             nCoupons -= 12;
             n[i] -= 5;
-            //printf("debug: %d %ld %ld\n", drink, coupons, season);
+            //printf("%d. nCoupons: %d, n[i] = %d\n", i+1, nCoupons, n[i]);
         }
-
-        printf("%d\n", nDrink);
+        else {
+            printf("%d\n", nDrink);
+            i++;
+            nDrink = 0;
+            nCoupons = n[i] + m[i];
+        }
+                //printf("debug: %ld %ld\n", nDrink, n[i]);
     }
-    
+
+
+
     return 0;
 }
