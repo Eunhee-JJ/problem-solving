@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37DC17882603C0CC002C9ECF /* scofe_test2.c in Sources */ = {isa = PBXBuildFile; fileRef = 37DC17862603BEC0002C9ECF /* scofe_test2.c */; };
+		37C062252605C46D0060A340 /* scofe_market.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C062242605C46D0060A340 /* scofe_market.c */; };
+		37C0622A2605D80E0060A340 /* scofe_bungae.c in Sources */ = {isa = PBXBuildFile; fileRef = 37C062292605D80E0060A340 /* scofe_bungae.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37C0621F2605BE7A0060A340 /* scofe_socar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scofe_socar.c; sourceTree = "<group>"; };
+		37C062242605C46D0060A340 /* scofe_market.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scofe_market.c; sourceTree = "<group>"; };
+		37C062292605D80E0060A340 /* scofe_bungae.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scofe_bungae.c; sourceTree = "<group>"; };
 		37DC17782600A506002C9ECF /* problemSolving */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = problemSolving; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DC177B2600A506002C9ECF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		37DC17842603B3D7002C9ECF /* scofe_test1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scofe_test1.c; sourceTree = "<group>"; };
@@ -70,6 +74,9 @@
 			children = (
 				37DC17842603B3D7002C9ECF /* scofe_test1.c */,
 				37DC17862603BEC0002C9ECF /* scofe_test2.c */,
+				37C0621F2605BE7A0060A340 /* scofe_socar.c */,
+				37C062242605C46D0060A340 /* scofe_market.c */,
+				37C062292605D80E0060A340 /* scofe_bungae.c */,
 			);
 			path = goorm;
 			sourceTree = "<group>";
@@ -130,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DC17882603C0CC002C9ECF /* scofe_test2.c in Sources */,
+				37C0622A2605D80E0060A340 /* scofe_bungae.c in Sources */,
+				37C062252605C46D0060A340 /* scofe_market.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
