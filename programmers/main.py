@@ -1,7 +1,4 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# 프로그래머스 레벨테스트 1단계 2번 - 배열 자르고, 정렬하고, 뽑고, 모으기
 
 
 def solution(array, commands):
